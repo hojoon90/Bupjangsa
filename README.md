@@ -9,3 +9,5 @@ https://bjs-temple-dev.p-e.kr
 - JPA
 - MariaDB
 - JWT
+## 구성도 이미지
+![Pasted image 20250228232327.png](images/Pasted%20image%2020250228232327.png)
