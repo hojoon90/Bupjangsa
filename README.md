@@ -11,3 +11,11 @@ https://bjs-temple-dev.p-e.kr
 - JWT
 ## 구성도 이미지
 ![Pasted image 20250228232327.png](images/Pasted%20image%2020250228232327.png)
+## 구성 방식
+1. 개발 소스 수정 후 github에 push
+2. push 후 jenkins를 통해 해당 코드를 Docker 컨테이너로 변환
+3. 변환 후 만들어 둔 사설 Repository에 이미지를 올림.
+4. 실제 배포할 서버에서는 해당 컨테이너만 가져갈 수 있도록 설정
+   - 사설 repo를 등록해두어 해당 repo에서 컨테이너를 찾을 수 있도록 처리
+   - 이를 통해 서버 환경이 변경되더라도 변경된 환경에 Docker만 설치하면 컨테이너를 통해 일관된 배포를 처리.
+5. nginx를 통해 등록한 도메인 접근 시 해당 서버 포트를 찾아갈 수 있도록 설정
