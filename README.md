@@ -9,6 +9,26 @@ https://bjs-temple-dev.p-e.kr
 - JPA
 - MariaDB
 - JWT
+## 서버 환경
+운영환경 (AWS 영역)
+- AWS EC2
+  - Nginx
+  - Docker
+    - backend 이미지
+    - frontend 이미지
+    - Portainer (컨테이너 관리용)
+- AWS RDS (MariaDB)
+
+배포환경 (배포서버 영역)
+- ubuntu 22.04
+  - Docker
+    - Registry
+    - Jenkins
+    - backend 개발 이미지
+    - frontend 개발 이미지
+    - MariaDB
+    - Portainer
+
 ## 구성도 이미지
 ![Pasted image 20250228232327.png](images/Pasted%20image%2020250228232327.png)
 ## 구성 방식
